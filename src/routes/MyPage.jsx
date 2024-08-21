@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 import Navbar from "../components/Navbar";
-import 마이페이지 from "../img/Mypage/마이페이지.png";
+import 마이페이지 from "../img/MyPage/마이페이지.png";
 
-function Mypage() {
+function MyPage() {
   return (
     <section class="page">
       <img class="background" src={마이페이지} />
@@ -12,4 +12,4 @@ function Mypage() {
   );
 }
 
-export default Mypage;
+export default MyPage;

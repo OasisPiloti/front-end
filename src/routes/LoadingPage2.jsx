@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import styles from "./Loading2.module.css";
-import 기본창 from "../img/Loading/기본창.png";
-import 한글2 from "../img/Loading/한글2.png";
-import 러시아어2 from "../img/Loading/러시아어2.png";
+import styles from "./LoadingPage2.module.css";
+import 기본창 from "../img/LoadingPage/기본창.png";
+import 한글2 from "../img/LoadingPage/한글2.png";
+import 러시아어2 from "../img/LoadingPage/러시아어2.png";
 import { useNavigate } from "react-router-dom";
 
-function Loading2() {
+function LoadingPage2() {
   const navigate = useNavigate();
 
   // 화면 클릭 시 다음 페이지로 이동하는 함수
@@ -48,4 +48,4 @@ function Loading2() {
   );
 }
 
-export default Loading2;
+export default LoadingPage2;
