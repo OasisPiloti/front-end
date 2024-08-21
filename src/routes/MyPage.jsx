@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Navbar from "../components/Navbar";
 import 마이페이지 from "../img/Mypage/마이페이지.png";
 

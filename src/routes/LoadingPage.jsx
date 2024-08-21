@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from "./Loading.module.css";
 import 기본창 from "../img/Loading/기본창.png";
 import 한글 from "../img/Loading/한글.png";

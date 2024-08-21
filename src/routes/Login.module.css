@@ -9,20 +9,17 @@
   bottom: 80px;
 }
 
-.google {
-  width: 250px;
-  height: 70px;
-  border-radius: 20px;
-}
-
-.kakao {
-  width: 250px;
-  height: 70px;
-  border-radius: 20px;
-}
-
+.google,
+.kakao,
 .naver {
   width: 250px;
   height: 70px;
   border-radius: 20px;
+  transition: transform 0.3s ease; /* 애니메이션 효과를 부드럽게 하기 위한 트랜지션 */
+}
+
+.google:hover,
+.kakao:hover,
+.naver:hover {
+  transform: scale(1.1); /* 호버 시 버튼이 1.1배 커지도록 설정 */
 }

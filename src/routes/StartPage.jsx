@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from "./Login.module.css";
 import 로그인페이지 from "../img/Login/로그인 페이지.png";
 import 구글버튼 from "../img/Login/구글 로그인 버튼.png";

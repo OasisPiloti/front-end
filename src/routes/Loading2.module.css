@@ -48,6 +48,13 @@
   transition: background-color 0.3s ease;
 }
 
+.grade:hover {
+  transform: scale(1.2); /* 호버 시 버튼이 1.1배 커지도록 설정 */
+  background-color: #0092FF; /* 호버 시 배경색이 변경되도록 설정 (예: 밝은 회색) */
+  color: #ffffff; /* 호버 시 텍스트 색상이 변경되도록 설정 (예: 어두운 회색) */
+  font-weight: bold; /* 호버 시 폰트가 굵게 변하도록 설정 */
+}
+
 .grade:active {
   background-color: #0092ff;
   color: white;
