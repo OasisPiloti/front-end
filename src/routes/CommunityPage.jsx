@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from "./Community.module.css";
 import 일대일 from "../img/Community/1대1.png";
 import banner1 from "../img/Community/banner1.png";
