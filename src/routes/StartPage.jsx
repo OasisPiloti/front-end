@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import styles from "./Login.module.css";
-import 로그인페이지 from "../img/Login/로그인 페이지.png";
-import 구글버튼 from "../img/Login/구글 로그인 버튼.png";
-import 카카오버튼 from "../img/Login/카카오 로그인 버튼.png";
-import 네이버버튼 from "../img/Login/네이버 로그인 버튼.png";
+import styles from "./StartPage.module.css";
+import 로그인페이지 from "../img/StartPage/로그인 페이지.png";
+import 구글버튼 from "../img/StartPage/구글 로그인 버튼.png";
+import 카카오버튼 from "../img/StartPage/카카오 로그인 버튼.png";
+import 네이버버튼 from "../img/StartPage/네이버 로그인 버튼.png";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+function StartPage() {
   const navigate = useNavigate();
 
   // 화면 클릭 시 다음 페이지로 이동하는 함수
@@ -42,4 +42,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default StartPage;

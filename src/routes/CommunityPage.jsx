@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import styles from "./Community.module.css";
-import 일대일 from "../img/Community/1대1.png";
-import banner1 from "../img/Community/banner1.png";
-import banner2 from "../img/Community/banner2.png";
-import banner3 from "../img/Community/banner3.png";
+import styles from "./CommunityPage.module.css";
+import 일대일 from "../img/CommunityPage/1대1.png";
+import banner1 from "../img/CommunityPage/banner1.png";
+import banner2 from "../img/CommunityPage/banner2.png";
+import banner3 from "../img/CommunityPage/banner3.png";
 import Navbar from "../components/Navbar";
 
-function Community() {
+function CommunityPage() {
   return (
     <section class="page">
       <img class="background" src={일대일} />
@@ -21,4 +21,4 @@ function Community() {
   );
 }
 
-export default Community;
+export default CommunityPage;
