@@ -1,0 +1,29 @@
+.textContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.textContainer img:first-child {
+  width: 310px;
+  height: 120px;
+  margin: 50px 0px;
+}
+
+.textContainer img:last-child {
+  width: 343px;
+  height: 150px;
+  margin: 50px 0px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
