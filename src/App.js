@@ -4,10 +4,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartPage from "./routes/StartPage";
 import LoadingPage from "./routes/LoadingPage";
 import LoadingPage2 from "./routes/LoadingPage2";
+
 import MainPage from "./routes/MainPage";
+
 import VocaPage from "./routes/VocaPage";
+import VocaPage2 from "./routes/VocaPage2"
+
 import CommunityPage from "./routes/CommunityPage";
 import MyPage from "./routes/MyPage";
+
 import LearningPage from "./routes/LearningPage";
 import LearningPage2 from "./routes/LearningPage2";
 import LearningPage3 from "./routes/LearningPage3";
@@ -33,6 +38,7 @@ function App() {
         <Route path="/learning6" element={<LearningPage6 />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/voca" element={<VocaPage />} />
+        <Route path="/voca2" element={<VocaPage2/>} />
         <Route path="/mypage" element={<MyPage />} />
       </Routes>
     </Router>
