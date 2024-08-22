@@ -4,10 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartPage from "./routes/StartPage";
 import LoadingPage from "./routes/LoadingPage";
 import LoadingPage2 from "./routes/LoadingPage2";
-import MainPage from "./routes/MainPage"
-
-import LearningPage from "./routes/LerningPage";
-import RecapPage from "./routes/RecapPage";
+import MainPage from "./routes/MainPage";
 import VocaPage from "./routes/VocaPage";
 import CommunityPage from "./routes/CommunityPage";
 import MyPage from "./routes/MyPage";
@@ -25,16 +22,15 @@ function App() {
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/loading" element={<LoadingPage />} />
-
         <Route path="/loading2" element={<LoadingPage2 />} />
+        <Route path="/main" element={<MainPage />} />
+        <Route path="/recap" element={<RecapPage />} />
         <Route path="/learning" element={<LearningPage />} />
         <Route path="/learning2" element={<LearningPage2 />} />
         <Route path="/learning3" element={<LearningPage3 />} />
         <Route path="/learning4" element={<LearningPage4 />} />
         <Route path="/learning5" element={<LearningPage5 />} />
         <Route path="/learning6" element={<LearningPage6 />} />
-
-        <Route path="/recap" element={<RecapPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/voca" element={<VocaPage />} />
         <Route path="/mypage" element={<MyPage />} />
