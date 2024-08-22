@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./StartPage.module.css";
 import 로그인페이지 from "../img/StartPage/로그인 페이지.png";
 import 구글버튼 from "../img/StartPage/구글 로그인 버튼.png";
-import 카카오버튼 from "../img/StartPage/카카오 로그인 버튼.png";
-import 네이버버튼 from "../img/StartPage/네이버 로그인 버튼.png";
+import 카카오버튼 from "../img/StartPage/카카오 로그인 버튼.png";
+import 네이버버튼 from "../img/StartPage/네이버 로그인 버튼.png";
 import { useNavigate } from "react-router-dom";
 
 function StartPage() {

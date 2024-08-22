@@ -11,7 +11,7 @@ function LoadingPage2() {
 
   // 화면 클릭 시 다음 페이지로 이동하는 함수
   const handleClick = () => {
-    navigate("/learning"); // 이동할 경로를 설정합니다.
+    navigate("/main"); // 이동할 경로를 설정합니다.
   };
 
   return (
