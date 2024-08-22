@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
@@ -17,25 +17,22 @@ function Navbar() {
           <span>Home</span>
         </NavLink>
         <NavLink
-          to="/search"
+          to="/learning"
           className={({ isActive }) =>
             isActive ? `${styles.activeLink}` : undefined
           }
         >
-          <i
-            className="fa-solid fa-magnifying-glass"
-            style={{ color: "#2f363e" }}
-          ></i>
-          <span>Search</span>
+          <i class="fa-solid fa-school" style={{ color: "#2f363e" }}></i>
+          <span>Learning</span>
         </NavLink>
         <NavLink
-          to="/notifications"
+          to="/community"
           className={({ isActive }) =>
             isActive ? `${styles.activeLink}` : undefined
           }
         >
-          <i className="fa-solid fa-inbox" style={{ color: "#2f363e" }}></i>
-          <span>Inbox</span>
+          <i class="fa-solid fa-people-roof" style={{ color: "#2f363e" }}></i>
+          <span>Community</span>
         </NavLink>
         <NavLink
           to="/mypage"

@@ -1,0 +1,56 @@
+.play {
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+  position: absolute;
+  top: 260px;
+  right: 40px;
+}
+
+.text1 {
+  width: 230.5px;
+  height: 213px;
+  z-index: 0;
+  position: absolute;
+  top: 330px;
+  left: 40px;
+  opacity: 0;
+  animation: fadeIn1 1s forwards;
+  animation-delay: 0.5s; /* 첫 번째 텍스트는 바로 나타남 */
+}
+
+.answer {
+  width: 225px; /* 원하는 너비로 조정하세요 */
+  height: 62px; /* 원하는 높이로 조정하세요 */
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* 사각형에 살짝 그림자 추가 */
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  z-index: 0;
+  position: absolute;
+  top: 540px;
+  right: 40px;
+  opacity: 0;
+  animation: fadeIn2 1s forwards;
+  animation-delay: 1.5s; /* 두 번째 텍스트는 1초 후에 나타남 */
+}
+
+@keyframes fadeIn1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  to {
+    opacity: 1;
+  }
+}
+
+.record {
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+  position: absolute;
+  bottom: 180px;
+}
