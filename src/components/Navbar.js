@@ -14,7 +14,7 @@ function Navbar() {
           }
         >
           <i className="fa-solid fa-house" style={{ color: "#2f363e" }}></i>
-          <span>Home</span>
+          <span>홈</span>
         </NavLink>
         <NavLink
           to="/learning"
@@ -23,7 +23,7 @@ function Navbar() {
           }
         >
           <i class="fa-solid fa-school" style={{ color: "#2f363e" }}></i>
-          <span>Learning</span>
+          <span>학습</span>
         </NavLink>
         <NavLink
           to="/community"
@@ -32,7 +32,7 @@ function Navbar() {
           }
         >
           <i class="fa-solid fa-people-roof" style={{ color: "#2f363e" }}></i>
-          <span>Community</span>
+          <span>코료</span>
         </NavLink>
         <NavLink
           to="/mypage"
@@ -41,7 +41,7 @@ function Navbar() {
           }
         >
           <i className="fa-solid fa-user" style={{ color: "#2f363e" }}></i>
-          <span>My Page</span>
+          <span>내 정보</span>
         </NavLink>
       </div>
       <div className={styles.bottom}></div>
