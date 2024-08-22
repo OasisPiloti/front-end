@@ -8,7 +8,7 @@ function Navbar() {
     <div className={styles.navbar}>
       <div className={styles.icons}>
         <NavLink
-          to="/home"
+          to="/main"
           className={({ isActive }) =>
             isActive ? `${styles.activeLink}` : undefined
           }

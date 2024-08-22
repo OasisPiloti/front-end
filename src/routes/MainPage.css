@@ -1,0 +1,55 @@
+.learningBtn {
+    width: 77%;
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+    top: 415px;
+    left: 45px;
+    transition: transform 0.3s ease;
+}
+
+.learningBtn:hover {
+    transform: scale(1.05);
+}
+
+.recapBtn {
+    width: 38%;
+    z-index: 0;
+    align-items: center;
+    position: absolute;
+    top: 595px;
+    left: 45px;
+    transition: transform 0.3s ease;
+}
+
+.recapBtn:hover {
+    transform: scale(1.05);
+}
+
+.communityBtn {
+    width: 36%;
+    z-index: 0;
+    align-items: center;
+    position: absolute;
+    top: 595px;
+    left: 205px;
+    transition: transform 0.3s ease;
+}
+
+.communityBtn:hover {
+    transform: scale(1.05);
+}
+
+.vocaBtn {
+    width: 36%;
+    z-index: 0;
+    align-items: center;
+    position: absolute;
+    top: 685px;
+    left: 205px;
+    transition: transform 0.3s ease;
+}
+
+.vocaBtn:hover {
+    transform: scale(1.05);
+}
