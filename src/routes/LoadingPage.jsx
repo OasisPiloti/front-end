@@ -15,9 +15,13 @@ function LoadingPage() {
   };
 
   return (
-    <section class="page" onClick={handleClick} style={{ cursor: "pointer" }}>
-      <img class="background" src={기본창} />
-      <div class={styles.textContainer}>
+    <section
+      className="page"
+      onClick={handleClick}
+      style={{ cursor: "pointer" }}
+    >
+      <img className="background" src={기본창} />
+      <div className={styles.textContainer}>
         <img src={한글} />
         <img src={러시아어} />
       </div>
