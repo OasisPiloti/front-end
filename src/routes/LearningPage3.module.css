@@ -16,7 +16,6 @@
   left: 40px;
   opacity: 0;
   animation: fadeIn1 1s forwards;
-  animation-delay: 0.5s; /* 첫 번째 텍스트는 바로 나타남 */
 }
 
 .text2 {
@@ -28,7 +27,7 @@
   right: 40px;
   opacity: 0;
   animation: fadeIn2 1s forwards;
-  animation-delay: 1.5s; /* 두 번째 텍스트는 1초 후에 나타남 */
+  animation-delay: 1s; /* 두 번째 텍스트는 1초 후에 나타남 */
 }
 
 @keyframes fadeIn1 {
@@ -49,4 +48,13 @@
   z-index: 0;
   position: absolute;
   bottom: 180px;
+}
+
+.next {
+  width: 80px;
+  height: 23px;
+  z-index: 1;
+  position: absolute;
+  bottom: 170px;
+  right: 40px;
 }

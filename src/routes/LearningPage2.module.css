@@ -5,3 +5,12 @@
   position: absolute;
   bottom: 170px;
 }
+
+.next {
+  width: 80px;
+  height: 23px;
+  z-index: 1;
+  position: absolute;
+  bottom: 130px;
+  right: 40px;
+}
