@@ -91,6 +91,14 @@ function LearningPage5() {
         onClick={handleClick}
         style={{ cursor: "pointer" }}
       />
+      <audio ref={audioRef1}>
+        <source src={audioUrls.audioUrl1} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio ref={audioRef2}>
+        <source src={audioUrls.audioUrl2} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
       <Navbar />
     </section>
   );
