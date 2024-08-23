@@ -7,6 +7,10 @@
   right: 40px;
 }
 
+.play:hover {
+  transform: scale(1.2);
+}
+
 .text1 {
   width: 230.5px;
   height: 213px;
@@ -50,6 +54,10 @@
   bottom: 180px;
 }
 
+.record:hover {
+  transform: scale(1.2);
+}
+
 .next {
   width: 80px;
   height: 23px;
@@ -57,4 +65,8 @@
   position: absolute;
   bottom: 170px;
   right: 40px;
+}
+
+.next:hover {
+  transform: scale(1.1);
 }

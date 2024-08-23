@@ -7,6 +7,10 @@
   right: 40px;
 }
 
+.play:hover {
+  transform: scale(1.2);
+}
+
 .text1 {
   width: 230.5px;
   height: 213px;
@@ -29,9 +33,10 @@
   position: absolute;
   top: 540px;
   right: 40px;
+  padding-left: 20px;
   opacity: 0;
   animation: fadeIn2 1s forwards;
-  animation-delay: 1s; /* 두 번째 텍스트는 1초 후에 나타남 */
+  animation-delay: 6s; /* 두 번째 텍스트는 1초 후에 나타남 */
 }
 
 @keyframes fadeIn1 {
@@ -54,6 +59,10 @@
   bottom: 180px;
 }
 
+.record:hover {
+  transform: scale(1.2);
+}
+
 .next {
   width: 80px;
   height: 23px;
@@ -61,4 +70,8 @@
   position: absolute;
   bottom: 170px;
   right: 40px;
+}
+
+.next:hover {
+  transform: scale(1.1);
 }
