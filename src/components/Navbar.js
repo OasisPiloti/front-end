@@ -22,7 +22,7 @@ function Navbar() {
             isActive ? `${styles.activeLink}` : undefined
           }
         >
-          <i class="fa-solid fa-school" style={{ color: "#2f363e" }}></i>
+          <i className="fa-solid fa-school" style={{ color: "#2f363e" }}></i>
           <span>학습</span>
         </NavLink>
         <NavLink
@@ -31,7 +31,10 @@ function Navbar() {
             isActive ? `${styles.activeLink}` : undefined
           }
         >
-          <i class="fa-solid fa-people-roof" style={{ color: "#2f363e" }}></i>
+          <i
+            className="fa-solid fa-people-roof"
+            style={{ color: "#2f363e" }}
+          ></i>
           <span>코료</span>
         </NavLink>
         <NavLink
