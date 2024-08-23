@@ -9,6 +9,7 @@ import 넘어가기버튼 from "../img/LearningPage/넘어가기버튼.png";
 
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import TypingEffect from "../components/TypingEffect";
 
 function LearningPage5() {
   const navigate = useNavigate();
@@ -17,18 +18,14 @@ function LearningPage5() {
     navigate("/learning6"); // 이동할 경로를 설정합니다.
   };
 
-  const audioRef1 = useRef(null);
-  const audioRef2 = useRef(null);
-  const [audioUrls, setAudioUrls] = useState({ audioUrl1: "", audioUrl2: "" });
+  const audioRef = useRef(null);
+  const [audioUrl, setAudioUrl] = useState("");
 
   const getAudio = async () => {
     try {
       const response = await fetch("http://localhost:8080/api/study-cards/2");
       const json = await response.json();
-      setAudioUrls({
-        audioUrl1: json.data.dialogues[0].audioUrl,
-        audioUrl2: json.data.dialogues[1].audioUrl,
-      });
+      setAudioUrl(json.data.dialogues[0].audioUrl);
     } catch (error) {
       console.error("Failed to fetch audio data:", error);
     }
@@ -39,30 +36,16 @@ function LearningPage5() {
   }, []);
 
   useEffect(() => {
-    if (audioUrls.audioUrl1 && audioRef1.current) {
-      audioRef1.current.load();
+    if (audioUrl && audioRef.current) {
+      audioRef.current.load();
     }
-    if (audioUrls.audioUrl2 && audioRef2.current) {
-      audioRef2.current.load();
-    }
-  }, [audioUrls]);
+  }, [audioUrl]);
 
   const handleImageClick = () => {
-    if (audioRef1.current) {
-      audioRef1.current.play().catch((error) => {
-        console.error("Failed to play the first audio:", error);
+    if (audioRef.current) {
+      audioRef.current.play().catch((error) => {
+        console.error("Failed to play the audio:", error);
       });
-
-      // 첫 번째 오디오가 끝나고 1초 후 두 번째 오디오 재생
-      audioRef1.current.onended = () => {
-        setTimeout(() => {
-          if (audioRef2.current) {
-            audioRef2.current.play().catch((error) => {
-              console.error("Failed to play the second audio:", error);
-            });
-          }
-        }, 1000); // 1초 대기
-      };
     }
   };
 
@@ -77,11 +60,12 @@ function LearningPage5() {
         alt="재생버튼"
       />
       <img className={styles.text1} src={텍스트1} />
-      <div className={styles.answer} />
+      <div className={styles.answer}>
+        <TypingEffect text="집에 불이 나서요." speed={300} maxLength={7} />
+      </div>
       <img
         className={styles.record}
         src={녹음버튼}
-        onClick={handleClick}
         style={{ cursor: "pointer" }}
       ></img>
       <img
@@ -91,12 +75,8 @@ function LearningPage5() {
         onClick={handleClick}
         style={{ cursor: "pointer" }}
       />
-      <audio ref={audioRef1}>
-        <source src={audioUrls.audioUrl1} type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <audio ref={audioRef2}>
-        <source src={audioUrls.audioUrl2} type="audio/mpeg" />
+      <audio ref={audioRef}>
+        <source src={audioUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <Navbar />

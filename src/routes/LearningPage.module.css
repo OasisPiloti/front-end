@@ -5,3 +5,7 @@
   position: absolute;
   top: 383px;
 }
+
+.learning:hover {
+  transform: scale(1.05);
+}

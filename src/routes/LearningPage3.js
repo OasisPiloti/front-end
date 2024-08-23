@@ -62,7 +62,7 @@ function LearningPage3() {
               console.error("Failed to play the second audio:", error);
             });
           }
-        }, 1000); // 1초 대기
+        }, 500); // 0.5초 대기
       };
     }
   };
@@ -82,7 +82,6 @@ function LearningPage3() {
       <img
         className={styles.record}
         src={녹음버튼}
-        onClick={handleClick}
         style={{ cursor: "pointer" }}
       ></img>
       <img

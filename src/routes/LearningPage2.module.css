@@ -6,6 +6,10 @@
   bottom: 170px;
 }
 
+.speaker:hover {
+  transform: scale(1.2);
+}
+
 .next {
   width: 80px;
   height: 23px;
@@ -13,4 +17,8 @@
   position: absolute;
   bottom: 130px;
   right: 40px;
+}
+
+.next:hover {
+  transform: scale(1.1);
 }
