@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "./StartPage.module.css";
 import 로그인페이지 from "../img/StartPage/로그인 페이지.png";
@@ -9,6 +9,15 @@ import { useNavigate } from "react-router-dom";
 
 function StartPage() {
   const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000); // 2초 후에 버튼이 나타나도록 설정
+
+    return () => clearTimeout(timer); // 타이머를 정리
+  }, []);
 
   // 화면 클릭 시 다음 페이지로 이동하는 함수
   const handleClick = () => {
@@ -22,18 +31,10 @@ function StartPage() {
       style={{ cursor: "pointer" }}
     >
       <img className="background" src={로그인페이지} alt="로그인 페이지 배경" />
-      <div className={styles.login}>
+      <div className={`${styles.login} ${isVisible ? styles.visible : ""}`}>
         <img className={styles.google} src={구글버튼} alt="구글 로그인 버튼" />
-        <img
-          className={styles.kakao}
-          src={카카오버튼}
-          alt="카카오 로그인 버튼"
-        />
-        <img
-          className={styles.naver}
-          src={네이버버튼}
-          alt="네이버 로그인 버튼"
-        />
+        <img className={styles.kakao} src={카카오버튼} alt="카카오 로그인 버튼" />
+        <img className={styles.naver} src={네이버버튼} alt="네이버 로그인 버튼" />
         <a className={styles.join} href="ddd">
           회원가입
         </a>
