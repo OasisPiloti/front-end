@@ -15,7 +15,7 @@ const TypingEffect = ({ text, speed, maxLength }) => {
           clearInterval(interval);
         }
       }, speed);
-    }, 6000); // 6초 후에 시작
+    }, 6000); // 6000에서 시간 변경하면 계속 에러나옴.
 
     return () => {
       clearTimeout(timeout); // Clean up timeout on unmount
