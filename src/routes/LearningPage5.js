@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
 import styles from "./LearningPage5.module.css";
-import 학습하기3 from "../img/LearningPage/학습하기3.png";
+import 학습하기5 from "../img/LearningPage/학습하기5.png";
 import 텍스트1 from "../img/LearningPage/텍스트1.png";
 import 재생버튼 from "../img/LearningPage/재생버튼.png";
 import 녹음버튼 from "../img/LearningPage/녹음버튼.png";
@@ -49,9 +49,20 @@ function LearningPage5() {
     }
   };
 
+  // 녹음 버튼 색깔 변경을 위한 코드
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClickBtn = () => {
+    setIsClicked(true);
+
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 4000); // 4000ms = 4초
+  };
+
   return (
     <section className="page">
-      <img className="background" src={학습하기3} />
+      <img className="background" src={학습하기5} />
       <img
         className={styles.play}
         src={재생버튼}
@@ -61,12 +72,19 @@ function LearningPage5() {
       />
       <img className={styles.text1} src={텍스트1} />
       <div className={styles.answer}>
-        <TypingEffect text="집에 불이 나서요." speed={300} maxLength={7} />
+        <TypingEffect text="집에 불이 나서요." speed={100} maxLength={7} />
       </div>
       <img
         className={styles.record}
         src={녹음버튼}
-        style={{ cursor: "pointer" }}
+        style={{
+          cursor: "pointer",
+          filter: isClicked // 녹음 버튼 색깔 변경을 위한 코드
+            ? "invert(20%) sepia(80%) saturate(1000%) hue-rotate(180deg) brightness(60%) contrast(150%)" // 클릭된 녹음버튼 색상
+            : "none",
+          transition: "none", // 녹음 버튼 색깔 변경을 위한 코드
+        }}
+        onClick={handleClickBtn} // 녹음 버튼 색깔 변경을 위한 코드
       ></img>
       <img
         className={styles.next}
