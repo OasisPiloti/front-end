@@ -15,7 +15,7 @@
   height: 206px;
   z-index: 0;
   position: absolute;
-  bottom: 140px;
+  bottom: 150px;
   opacity: 0;
   transform: translateY(50px); /* 시작 위치를 아래로 설정 */
   animation: fadeInUp2 1s forwards;

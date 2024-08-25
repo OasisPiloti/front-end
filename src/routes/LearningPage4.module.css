@@ -3,7 +3,7 @@
   height: 50px;
   z-index: 0;
   position: absolute;
-  bottom: 390px;
+  bottom: 500px;
   transition: transform 0.3s ease;
 }
 
@@ -16,7 +16,7 @@
   height: 206px;
   z-index: 0;
   position: absolute;
-  bottom: 140px;
+  bottom: 220px;
   opacity: 0;
   transform: translateY(50px); /* 시작 위치를 아래로 설정 */
   animation: fadeIn 1s forwards;
@@ -35,7 +35,7 @@
   height: 23px;
   z-index: 1;
   position: absolute;
-  bottom: 120px;
+  bottom: 170px;
   right: 40px;
   transition: transform 0.3s ease;
 }
