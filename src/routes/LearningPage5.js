@@ -82,7 +82,6 @@ function LearningPage5() {
           filter: isClicked // 녹음 버튼 색깔 변경을 위한 코드
             ? "invert(20%) sepia(80%) saturate(1000%) hue-rotate(180deg) brightness(60%) contrast(150%)" // 클릭된 녹음버튼 색상
             : "none",
-          transition: "none", // 녹음 버튼 색깔 변경을 위한 코드
         }}
         onClick={handleClickBtn} // 녹음 버튼 색깔 변경을 위한 코드
       ></img>
