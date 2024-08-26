@@ -80,11 +80,6 @@ function LearningPage3() {
       <img className={styles.text1} src={텍스트1} />
       <img className={styles.text2} src={텍스트2} />
       <img
-        className={styles.record}
-        src={녹음버튼}
-        style={{ cursor: "pointer" }}
-      ></img>
-      <img
         className={styles.next}
         src={넘어가기버튼}
         alt="넘어가기 버튼"
